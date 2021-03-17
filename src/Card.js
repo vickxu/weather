@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css';
+import './owfont-master/css/owfont-regular.css';
 var moment = require('moment');
 
 class Card extends React.Component {
@@ -23,7 +24,7 @@ class Card extends React.Component {
           <i className={imgURL}></i>
           <h2>{Math.round(this.props.day.main.temp)} °C</h2>
           <div className="card-body">
-            <p className="card-text">{this.props.day.weather[0].description}</p>
+            <p className="card-text">{this.props.day.weather[0].main}</p>
             <button className="btn btn-dark btn-outline-light">See Hourly Forecast</button>
           </div>
         </div>

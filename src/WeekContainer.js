@@ -36,7 +36,7 @@ class WeekContainer extends React.Component {
 
   sendNewFetch = () => {
     //const weatherURL = `http://api.openweathermap.org/data/2.5/forecast?${this.state.location},${this.state.country}&units=${this.state.degreeType}&APPID=${apiConfig.owmKey}`
-    const weatherURL = `http://api.openweathermap.org/data/2.5/forecast/daily?q=Stamford&APPID=4b6f1c6a5629ab7589930bd889ecd5c8`
+    const weatherURL = `http://api.openweathermap.org/data/2.5/forecast?${this.state.location},${this.state.country}&units=${this.state.degreeType}&APPID=${apiConfig.owmKey}`
 
     fetch(weatherURL)
     .then(res => res.json())
